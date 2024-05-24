@@ -1,5 +1,5 @@
 body {
-    background-color: #efe5d0;
+    background-color: #ffffff;
     font-family: Arial, "Trebuchet MS", sans-serif;
     margin: 0px;
 }
@@ -15,14 +15,14 @@ h1 {
 }
 section#main {
     float: right;
-    width:70%;
-    height: 300px;
+    width:100%;
+    height: 20%;
     background-color: beige;
 }
 nav {
     float: left;
-    width: 30%;
-    height: 300px;
+    width: 100%;
+    height: 40%;
     background-color: whitesmoke;
 }
 footer {
@@ -33,4 +33,65 @@ footer {
     margin: 0px 0px 0px 0px;
     font-size: 90%;
     clear: both;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    #header {
+        padding: 5px;
+        margin: 20px auto;
+        width: 100%;
+    }
+    #main {
+        width: 100%;
+        float: right;
+    }
+    #nav {
+        width: 100%;
+        float: left;
+    }
+    #footer {
+        clear: both;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    #header {
+        padding: 5px;
+        margin: 20px auto;
+        background-color: yellow;
+    }
+    #main {
+        width: 100%;
+    }
+    #nav {
+        width: 100%;
+    }
+    #footer {
+        width: 100%;
+        background-color: rgb(194, 152, 0);
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #header {
+        padding: 5px;
+        margin: 20px auto;
+        background-color: lightgreen;
+    }
+    #main {
+        width: 100%;
+    }
+    #nav {
+        width: 100%;
+    }
+    #footer {
+        clear: both;
+        background-color: rgb(27, 147, 0);
+
+    }
 }
