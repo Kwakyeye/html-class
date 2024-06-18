@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contents</title>
+
+    <style>
+         .header {
+            margin: 10px auto;
+        }
+
+        .side {
+            width: 25%;
+            float: left;
+        }
+
+        .side ul li {
+            background-color: rgba(175, 124, 223, 0.603);
+            color: white;
+            padding: 10px;
+            margin: 2%;
+        }
+
+        .side ul li:hover {
+            background-color:lightblue;
+            color: black;
+            padding: 10px;
+            margin: 2%;
+        }
+
+        .adv {
+            width: 70%;
+            float: right;
+
+        }
+
+        .sub_bg {
+            width: 70%;
+            height: 300px;
+            background: url(예진.jpeg) 0 0% no-repeat;
+            background-size: 98%;
+
+            animation: animate_background 10s linear;
+        }
+
+        .sub_bg h2 {
+            color: aliceblue;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 500;
+            padding-top: 40px;
+        }
+
+        .sub_bg h2 span {
+            display: block;
+            font-size: 15px;
+        }
+
+
+        @keyframes animate_background {
+            0% { background-position: 0% 0%}
+            50% { background-position: 0% 100%}
+            100% { background-position: 0% 0%}
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .header, .side, .adv, .sub_bg {
+                width: 100%
+            }
+        }
+        
+         .item1 {
+            grid-area: header;
+            background-color: #cb95dda8;
+        }
+
+        .item2 {
+            grid-area: menu;
+            background-color: #605ece54;
+        }
+
+        .item3 {
+            grid-area: article;
+            background-color: #ee79b38a;
+        }
+
+        .item4 {
+            grid-area: sidebar;
+            background-color: #bff35e67;
+        }
+
+        .item5 {
+            grid-area: footer;
+            background-color: #f3db72c1;
+        }
+    
+
+
+         .container {
+            display: grid;
+            gap: 5px;
+            background-color: #f2f3ee;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+             'header'
+             'menu'
+             'article'
+             'sidebar'
+             'footer';
+            height: 300px;
+            padding: 5px;
+        }
+
+        @media (min-width: 800px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'header header header'
+            'menu article sidebar'
+            'menu footer footer';
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to [ YEJIN'S WORLD ]</h1>
+        <h3>Let me introduce myself.</h3>
+        <h3>저를 소개합니다.</h3>
+    </div>
+
+
+    <div class="side">
+        <ul>
+            <li><a href="index.html" target="myiframe"> 예진이의 홈 </a></li>
+            <li><a href="contents.html" target="myiframe"> 자기소개 </a></li>
+            <li><a href="gallery.html" target="myiframe"> 갤러리 </a></li>
+        </ul>
+
+
+    </div>
+    <div class="sub_bg adv">
+        <h2>자기소개<span>안녕하세요. 대학생 3학년 곽예진입니다.</span></h2>
+    
+        <div class="container">
+            <div class="item1">
+                LOVE <br>
+                저는 우주를 사랑합니다. <br>
+                한정적인 것에 벗어나 무한한 형태의 굴레에 빠지는 게 좋습니다. </div>
+            <div class="item2">
+                HOBBY <br>
+                취미는 노래 듣기와 부르기 입니다. <br>
+                잔잔한 발라드를 좋아하고 싱어송라이터 노래를 많이 듣습니다. <br>
+            </div>
+            <div class="item3">
+                WRITE <br>
+                저는 글쓰는 것을 좋아합니다. <br>
+                한 달에 2번 이상 블로그에 글을 쓰곤 합니다. <br>
+                그리고 다이어리에 일기 및 계획을 정리합니다. <br>
+            </div>
+            <div class="item4">
+                WANT <br>
+                요즘 하고 싶은 활동은 라디오, 팟캐스트입니다. <br>
+                마이크를 사서 진행해보고 싶습니다. <br>
+            </div>
+            <div class="item5">
+                GOAL <br>
+                목표는 늘 세웁니다. 계획을 할 때 미래가 그려져 행복합니다. <br>
+                6월 달의 목표는 '지혜롭게 선택하는 것'입니다. <br>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+</html>
